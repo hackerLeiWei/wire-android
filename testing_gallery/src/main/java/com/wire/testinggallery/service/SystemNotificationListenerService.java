@@ -32,7 +32,7 @@ public class SystemNotificationListenerService extends NotificationListenerServi
     private SystemNotificationListenerReceiver receiver;
 
     private static final String ACTION_NAME = "com.wire.testinggallery.notification";
-    private static final String PACKAGE_WIRE = "wire";
+    private static final String PACKAGE_WIRE = "secret";
     private static final String PACKAGE_WAZ = "waz";
 
     private static final String NOTIFICATION_TITLE = "android.title";

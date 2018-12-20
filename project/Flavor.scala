@@ -41,7 +41,7 @@ case class Flavor(
 
 object Flavor {
 
-  lazy val Custom = Flavor("-custom", "com.waz.zclient", BuildConfig.Dev.copy(useEdgeBackend = false), Placeholders.Dev.copy(applicationLabel = "Wire", applicationIcon = Placeholders.Prod.applicationIcon))
+  lazy val Custom = Flavor("-custom", "com.waz.zclient", BuildConfig.Dev.copy(useEdgeBackend = false), Placeholders.Dev.copy(applicationLabel = "Secret", applicationIcon = Placeholders.Prod.applicationIcon))
   lazy val Dev = Flavor("-dev", "com.waz.zclient.dev", BuildConfig.Dev, Placeholders.Dev)
   lazy val Candidate = Flavor("-candidate", "com.wire.candidate", BuildConfig.Candidate, Placeholders.Candidate, Some("proguard-android-optimize-wire.txt"))
   lazy val Prod = Flavor("", "com.wire", BuildConfig.Prod, Placeholders.Prod, Some("proguard-android-optimize-wire.txt"), SigningConfig.Release)

@@ -47,7 +47,8 @@ public class UserPreferencesController implements IUserPreferencesController {
     private static final String USER_PREF_UNSUPPORTED_EMOJIS = "USER_PREF_UNSUPPORTED_EMOJIS";
     private static final String USER_PREF_UNSUPPORTED_EMOJIS_CHECKED = "USER_PREF_UNSUPPORTED_EMOJIS_CHECKED";
 
-    private static final String PREFS_DEVICE_ID = "com.waz.device.id";
+    //WIRE_OLD  private static final String PREFS_DEVICE_ID = "com.waz.device.id";
+    public static final String PREFS_DEVICE_ID = "com.waz.device.id";
 
     private final SharedPreferences userPreferences;
     private Context context;

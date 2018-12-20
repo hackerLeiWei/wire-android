@@ -70,6 +70,41 @@ ext {
     buildToolsVersion = '28.0.3'
     sourceCompatibilityVersion = JavaVersion.VERSION_1_8
     targetCompatibilityVersion = JavaVersion.VERSION_1_8
+
+
+
+//    ext {
+        majorVersion = "3.23."
+
+        scalaMajorVersion = '2.11'
+        scalaVersion = scalaMajorVersion + '.12'
+
+        supportLibVersion = '27.1.1'
+        playServicesVersion = '15.0.1'
+        audioVersion = System.getenv("AUDIO_VERSION") ?: '1.209.0@aar'
+        stethoVersion = '1.5.0'
+        paging_version = "1.0.0"
+        // Release version number must be like this X.0(.Y)
+
+        if (zMessagingCompile.toBoolean()) {
+            //WIRE_OLD zMessagingDevVersion = "135.2190"
+            //WIRE_OLD zMessagingReleaseVersion = System.getenv("ZMESSAGING_VERSION") ?: '134.1.500@aar'
+            zMessagingDevVersion = "135-SNAPSHOT"
+            zMessagingReleaseVersion = System.getenv("ZMESSAGING_VERSION") ?: "${zMessagingDevVersion}@aar"
+        }
+
+
+        avsVersion = '4.7.158@aar'
+        avsInternalVersion = avsVersion //leave this here in case we want to test specific AVS versions on internal
+        avsName = 'avs'
+        avsGroup = 'com.wire'
+
+        // proprietary avs artifact configuration
+        customAvsVersion = '4.8.11@aar'
+        customAvsInternalVersion = customAvsVersion
+        customAvsName = 'avs'
+        customAvsGroup = 'com.wearezeta.avs'
+//    }
 }
 
 allprojects {

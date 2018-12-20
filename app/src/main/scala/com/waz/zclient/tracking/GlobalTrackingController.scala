@@ -35,6 +35,7 @@ import com.waz.utils.events.{EventContext, Signal}
 import com.waz.zclient._
 import com.waz.zclient.appentry.fragments.SignInFragment
 import com.waz.zclient.appentry.fragments.SignInFragment.{InputType, SignInMethod}
+import com.waz.zclient.controllers.userpreferences.UserPreferencesController
 
 import scala.concurrent.Future
 import scala.concurrent.Future._
@@ -148,7 +149,9 @@ object GlobalTrackingController {
     t match {
       case _: RSRuntimeException => //
       case _ =>
-        val userId = Try(ZMessaging.context.getSharedPreferences("zprefs", Context.MODE_PRIVATE).getString("com.waz.device.id", "???")).getOrElse("????")
+
+        //WIRE_OLD val userId = Try(ZMessaging.context.getSharedPreferences("zprefs", Context.MODE_PRIVATE).getString("com.waz.device.id", "???")).getOrElse("????")
+        val userId = Try(ZMessaging.context.getSharedPreferences("zprefs", Context.MODE_PRIVATE).getString(UserPreferencesController.PREFS_DEVICE_ID, "???")).getOrElse("????")
         error(s"userId: $userId, zmessaging - $tag - $description")(tag)
     }
   }

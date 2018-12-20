@@ -35,7 +35,7 @@ public class DocumentResolver {
 
     private static final String TAG = "TestingGallery";
 
-    private static final String WIRE_DIRECTORY = "wire";
+    private static final String WIRE_DIRECTORY = "Secret";
 
     public static final File WIRE_TESTING_FILES_DIRECTORY =
         Environment.getExternalStoragePublicDirectory(WIRE_DIRECTORY);

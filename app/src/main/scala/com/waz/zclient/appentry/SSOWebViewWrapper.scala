@@ -77,7 +77,8 @@ class SSOWebViewWrapper(webView: WebView, backendHost: String) {
 
 object SSOWebViewWrapper {
 
-  val ResponseSchema = "wire"
+  //WIRE_OLD val ResponseSchema = "wire"
+  val ResponseSchema = "secret"
   val CookieQuery = "cookie"
   val UserIdQuery = "user"
   val FailureQuery = "failure"

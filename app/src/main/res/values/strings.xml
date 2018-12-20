@@ -632,7 +632,7 @@
     <string name="you_turned_off_message_timer">[[You]] turned off the message timer</string>
 
     <!-- Others -->
-    <string name="app_name">Wire</string>
+    <string name="app_name">Secret</string>
     <string name="content__system__item_separator">,</string>
     <string name="content__system__last_item_separator">and</string>
     <string name="content__system__you">you</string>

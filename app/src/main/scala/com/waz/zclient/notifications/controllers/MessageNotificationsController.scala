@@ -441,10 +441,10 @@ class MessageNotificationsController(bundleEnabled: Boolean = Build.VERSION.SDK_
     }
 
   private def notificationColor(userId: UserId) = applicationId match {
-    case "com.wire.internal"   => Some(Color.GREEN)
-    case "com.waz.zclient.dev" => accentColors.get(userId)
-    case "com.wire.x"          => Some(Color.RED)
-    case "com.wire.qa"         => Some(Color.BLUE)
+    case "com.jsy.secret.internal"   => Some(Color.GREEN)
+    case "com.jsy.secret.dev" => accentColors.get(userId)
+    case "com.jsy.secret.x"          => Some(Color.RED)
+    case "com.jsy.secret.qa"         => Some(Color.BLUE)
     case _                     => None
   }
 

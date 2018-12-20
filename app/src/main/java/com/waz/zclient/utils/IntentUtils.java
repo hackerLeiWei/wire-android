@@ -36,7 +36,7 @@ import java.util.Locale;
 
 public class IntentUtils {
 
-    public static final String WIRE_SCHEME = "wire";
+    public static final String WIRE_SCHEME = "secret";
     public static final String PASSWORD_RESET_SUCCESSFUL_HOST_TOKEN = "password-reset-successful";
     public static final String EXTRA_LAUNCH_FROM_SAVE_IMAGE_NOTIFICATION = "EXTRA_LAUNCH_FROM_SAVE_IMAGE_NOTIFICATION";
     public static final String EXTRA_CONTENT_URI = "EXTRA_CONTENT_URI";

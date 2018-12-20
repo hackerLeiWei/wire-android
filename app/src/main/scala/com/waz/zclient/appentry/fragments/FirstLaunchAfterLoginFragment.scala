@@ -157,7 +157,8 @@ class FirstLaunchAfterLoginFragment extends FragmentHelper with View.OnClickList
 
         val backupFile = backup.map { uri =>
           val inputStream = getContext.getContentResolver.openInputStream(AndroidURIUtil.unwrap(uri))
-          val file = File.createTempFile("wire", null)
+          //WIRE_OLD val file = File.createTempFile("wire", null)
+          val file = File.createTempFile("secret", null)
           val outputStream = new FileOutputStream(file)
           IoUtils.copy(inputStream, outputStream)
           file
